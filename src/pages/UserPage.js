@@ -27,7 +27,8 @@ useEffect(() => {
         navigate("/"); // logout
       }
     });
-}, []);
+}, [navigate]); // ← ✅ BURAYI GÜNCELLEDİK
+
 
  const handleDelete = async (id) => {
   const token = localStorage.getItem("token");
